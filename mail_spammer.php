@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -13,7 +14,9 @@ function mailSpam(string $mail = 'example@gmail.com', string $title = 'SPAM!', s
 	while($count > 0){
 		mail($mail, $title, $text);
 		$count--;
-		}
-		return true;
 	}
+	return true;
+}
+
+// Using: mailSpam(...args)
 ?>
